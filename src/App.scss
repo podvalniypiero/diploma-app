@@ -1,20 +1,29 @@
+
+$light-theme: #FFFF;
+$dark-theme: #0000;
+$logo-theme: #FFDD2D;
+$font-main: 20px;
+$font-par: 16px;
+
 *{
   font-family: 'Roboto Slab', serif;
-  font-size: 24px;
+  font-size: $font-main;
   font-weight:200;
   
 }
+
 body{
   margin: 0;
-  background: #0000;
+  background: $dark-theme;
 }
+
 .wrapper{
   margin-top:0px;
 }
 
 .headerTop{
   position: absolute;
-  background: #FFDD2D;
+  background: $logo-theme;
   height:72px;
   width: 100%;
   display: flex;
@@ -32,7 +41,7 @@ body{
   display: grid;
   grid-template-columns: 60px 250px auto;
   column-gap: 300px ;
-  background: #FFFF;
+  background: $light-theme;
   height: max-content;
   margin-bottom: 34px;
   
@@ -46,7 +55,7 @@ body{
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: $font-main;
   width: max-content;
   padding: 15px;
   margin-left: 210%;
