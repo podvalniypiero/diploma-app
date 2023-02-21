@@ -49,7 +49,8 @@ body{
   padding-top: 15px;
   
 }
-button{
+.headerMain button{
+  position: relative;
   cursor: pointer;
   background: rgba(255, 221, 45, 0.45);
   mix-blend-mode: normal;
@@ -60,17 +61,19 @@ button{
   font-style: normal;
   font-weight: 500;
   font-size: $font-main;
-  width: max-content;
+  width: 200px;
   padding: 15px;
   margin-left: 210%;
 
 }
-button:hover{
+.headerMain button:hover{
   background: rgba(179, 154, 30, 0.45);
   cursor: pointer;
+  
 }
 .logo{
 margin-left: 110%;
+cursor: pointer;
 
 }
 
