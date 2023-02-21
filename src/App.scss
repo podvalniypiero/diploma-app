@@ -1,7 +1,8 @@
 
 $light-theme: #FFFF;
-$dark-theme: #0000;
+$dark-theme: black;
 $logo-theme: #FFDD2D;
+$logo-theme-back: rgb(255, 237, 147);
 $font-main: 20px;
 $font-par: 16px;
 
@@ -36,14 +37,16 @@ body{
 .headerMain{
   position: absolute;
   width: 100%;
-  top: 90px;
+  top: 70px;
   font-family: 'Roboto Condensed', sans-serif;
   display: grid;
   grid-template-columns: 60px 250px auto;
   column-gap: 300px ;
   background: $light-theme;
   height: max-content;
-  margin-bottom: 34px;
+  
+  padding-bottom: 20px;
+  padding-top: 15px;
   
 }
 .headerMain button{
@@ -67,6 +70,60 @@ body{
 margin-left: 110%;
 
 }
-.burger{
+
+.burger-menu {
   margin-left: 70%;
+  height: 100%;
+  width: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger-bar {
+  width: 4em;
+  height: 0.45em;
+  background: black;
+  border-radius: 0.5em;
+}
+
+.menu {
+  width: 20%;
+  height: 40vh;
+  background-color: $logo-theme-back;
+  position: absolute;
+  left: 80%;
+  top: 0;
+  z-index: -1;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: inherit;
+}
+
+.burger-bar.clicked:nth-child(1){
+  transform: rotate(45deg) translate(0.75em, 1.25em);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(2){
+  transform: scale(0.1);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(3){
+  transform: rotate(135deg) translate(-0.5em, 1em);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar.unclicked {
+  transform: rotate(0) translate(0);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
