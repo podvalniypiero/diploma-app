@@ -23,14 +23,14 @@ body{
 
 .headerTop{
   position: absolute;
+  top:0;
   background: $logo-theme;
   height:50px;
   width: 100%;
-  display: flex;
-  align-items: center;
   p{
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 500;
+    margin-left: 10%;
   }
   .keyframes{
     animation: text 25s infinite linear;
@@ -49,9 +49,8 @@ body{
 }
 
 .headerMain{
-  position: absolute;
-  width: 100%;
-  top: 50px;
+  position: relative;
+  margin-top:0;
   font-family: 'Roboto Condensed', sans-serif;
   display: grid;
   grid-template-columns: 60px 250px auto;
@@ -59,6 +58,7 @@ body{
   background: $light-theme;
   height: max-content;
   padding: 10px;
+  
 
   button{
     position: relative;
@@ -85,16 +85,16 @@ body{
     margin-left: 110%;
     cursor: pointer;
     }
+    nav {
+      position: relative;
+      margin-left: 300%;
+      display: flex;
+      flex-flow: nowrap row;
+      align-items: center;
+      justify-content: space-evenly;
+      button{
+        margin-left: 40px;
+      }  
+    }
 }
 
-nav {
-  position: relative;
-  margin-left: 300%;
-  display: flex;
-  flex-flow: nowrap row;
-  align-items: center;
-  justify-content: space-evenly;
-  button{
-    margin-left: 60px;
-  }  
-}

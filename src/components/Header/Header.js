@@ -8,9 +8,8 @@ function Header() {
         
       <header>
       <div className={styles.headerTop}>
-        <p className={styles.keyframes}>ЛЕКТОРИЙ ПРОВОДНИК В МИР ИСКУССТВА СЛОВА</p>
-      </div>
-       <div className={styles.headerMain}>
+        <p>ЛЕКТОРИЙ ПРОВОДНИК В МИР ИСКУССТВА СЛОВА</p>
+        <div className={styles.headerMain}>
         <img className={styles.logo} width={60} src='\img\logotype.jpg' alt='logo'></img>
         <nav>
                  <button>О НАС</button>
@@ -19,6 +18,8 @@ function Header() {
                  <button>ИЗБРАННОЕ</button>
         </nav>
        </div>
+      </div>
+       
        </header>
      );
   }
