@@ -1,23 +1,17 @@
-
 $light-theme: #FFFF;
 $dark-theme: black;
 $logo-theme: #FFDD2D;
 $logo-theme-back: rgb(255, 237, 147);
-$font-main: 20px;
-$font-par: 16px;
+$font-main: 16px;
+$font-par: 14px;
 
 *{
   font-family: 'Roboto Slab', serif;
   font-size: $font-main;
-  font-weight:200;
-  
+  font-weight: 200;
 }
 
 body{
   margin: 0;
   background: $dark-theme;
-}
-
-.wrapper{
-  margin-top:0px;
 }
