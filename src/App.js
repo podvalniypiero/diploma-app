@@ -1,7 +1,7 @@
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {React, useState} from 'react';
-import Header from './components/Header/Header';
+import Container from './components/Container/Container';
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
 
         <Route path='/' element = {
           
-          <Header/>
+          <Container/>
         }/>
 
       </Routes>
