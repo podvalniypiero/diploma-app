@@ -2,6 +2,7 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {React, useState} from 'react';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -11,8 +12,11 @@ function App() {
       <Routes>
 
         <Route path='/' element = {
-          
+          <>
           <Header/>
+          <Footer/>
+          </>
+          
         }/>
 
       </Routes>

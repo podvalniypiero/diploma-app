@@ -6,10 +6,12 @@ function Footer() {
     
     return(
       <footer>
-        <nav>
-            <p>СВЯЗАТЬСЯ С НАМИ</p>
-             <img src='' alt='telegram'></img>
 
+        <nav>
+             <a><p>СВЯЗАТЬСЯ С НАМИ</p></a>
+             <a><img src='\img\telega.svg' alt='telegram'></img></a>
+             <a><img src='\img\vk.svg' alt='vk'></img></a>
+             <p>© 2023 designed and developed by Maria Karshina</p>
        </nav>
        
        </footer>
