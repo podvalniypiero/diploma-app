@@ -10,7 +10,7 @@ function Header() {
       <div className={styles.headerTop}>
         <p>ЛЕКТОРИЙ ПРОВОДНИК В МИР ИСКУССТВА СЛОВА</p>
         <div className={styles.headerMain}>
-        <img className={styles.logo} width={60} src='\img\logotype.jpg' alt='logo'></img>
+        <img className={styles.logo} width={60} src='\img\logotype.svg' alt='logo'></img>
         <nav>
                  <button>О НАС</button>
                  <button>НАША КОЛЛЕКЦИЯ</button>
